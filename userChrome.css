@@ -1,0 +1,33 @@
+:root {
+    --tab-block-margin: 0px !important;
+    --urlbar-height: 36px;
+    --urlbar-toolbar-height: 36px;
+}
+
+#nav-bar {
+    height: 36px;
+}
+
+#titlebar {
+    height: 39px;
+}
+
+.titlebar-spacer {
+    width: 0 !important;
+}
+
+.tabbrowser-tab {
+    padding: 0 1px !important;
+}
+
+.tab-background[selected]:not([multiselected="true"]):-moz-lwtheme {
+    outline: none !important;
+}
+
+.urlbar-input-box {
+    overflow: clip;
+}
+
+#urlbar-input {
+    margin-left: calc(var(--urlbar-scheme-size) * -0.76) !important;
+}
