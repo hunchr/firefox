@@ -24,6 +24,10 @@
     outline: none !important;
 }
 
+#nav-bar toolbarbutton {
+    margin-bottom: 3px !important;
+}
+
 .urlbar-input-box {
     overflow: clip;
 }
