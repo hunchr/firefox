@@ -14,3 +14,13 @@
 2. Add a new search shortcut
 3. Enter `https://www.google.com/search?q=%s&pws=0` as engine URL
 4. Go to `Default Search Engine` and choose this new search engine
+
+## about:config
+Hide user agent: general.useragent.override = Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/999.99 (KHTML, like Gecko) Chrome/999.0.0.0 Safari/999.99
+Hide referrer: network.http.sendRefererHeader = 0
+Do not track: privacy.donottrackheader.enabled = true
+Tracking protection: privacy.trackingprotection.enabled = true
+Prevent IDN homograph attacks: network.IDN_show_punycode = true
+Allow clipboard events: dom.event.clipboardevents.enabled = false
+Hide geolocation: geo.enabled = false
+Disable Pocket: extensions.pocket.enabled = false
