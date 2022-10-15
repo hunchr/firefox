@@ -5,7 +5,7 @@
     "theme": {
         "images": {
             "additional_backgrounds": [
-                "images/bg-001-9c6d74e14860e77ee6f8f43e824bff25.svg"
+                "images/bg-000-5672c42860d5b06e1058dc477397f3ef.svg"
             ]
         },
         "properties": {
@@ -50,7 +50,7 @@
             "toolbar_field_separator": "rgb(0, 0, 0)",
             "toolbar_field_text_focus": "rgb(255, 255, 255)",
             "toolbar_top_separator": "rgb(0, 0, 0)",
-            "toolbar_vertical_separator": "rgb(0, 0, 0)"
+            "toolbar_vertical_separator": "rgb(26, 26, 28)"
         }
     }
 }
