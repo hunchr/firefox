@@ -1,9 +1,8 @@
 # My Firefox Config
-## Themes
-### Installation on Windows
+## Theme
 1. Create a folder in C:\Users\\`USERNAME`\AppData\Roaming\Mozilla\Firefox\Profiles\\`PROFILE` and name it "chrome"
-2. Put the [userChrome.css](userChrome.css) and [userContent.css](userContent.css) files inside the `chrome` folder
-3. Go to [color.firefox.com](https://color.firefox.com/?theme=XQAAAAJ1BAAAAAAAAABBKYhm849SCicxcUhA3DJozHnOMuotJI_u7cajvY2nrbwtWf53IW6FuNEDefTA2KgceS3BV2u7t_xrmcdfAo-3jscXzIZlAESZoNmSHdpCavYrOySP8OSqYJNYa-fLuAPVVqu0hTAh-T4B_bMryOU1pkadpivPkWkBqHKkidXE3Lf9luRf4b6m3WdqgzluXenkZdEOreatmVB63U-Vpm-1C5ws2MBUins0JLXCIgJi7NGKa68vnWM_fqAbB8QILVtKRrTUJQMGElx1v_TgKNxRXHNFo_rzO0jAS0miX_2ipiQ5K-gb01QT7WQ5f2Y31i19w1H64Gv_PoTerPffdQVXKNhyYQvCfkezp7T8AY54gh4lWkCrSnoDq62qqkgE2jJnR8gLSVisJ77QbhnnxTjNaJOgBRqcULdXsdd5xxarWZFQLykLAhZ6wHtZpB_rVquL6PeXDkHwCL8VRHc5yc3QDZuHoANXEawDeUQ3MuGL2aKIE1uWw5X9ZM4uG5ebMuBSaEiEqkMWRUMIGs195T0qIPt9Ay4) and select this theme or use the [manifest.json](manifest.json) file
+2. Put the [userChrome.css](userChrome.css) file inside the `chrome` folder
+3. Disable all theme add-ons
 
 ## Extensions
 * Adblocker: [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
@@ -16,7 +15,7 @@
 4. Go to `Default Search Engine` and choose this new search engine
 
 ## about:config
-Hide user agent: general.useragent.override = Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/999.99 (KHTML, like Gecko) Chrome/999.0.0.0 Safari/999.99
+Hide user agent (May cause some websites to not work correctly): general.useragent.override = Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/999.99 (KHTML, like Gecko) Chrome/999.0.0.0 Safari/999.99
 Hide referrer: network.http.sendRefererHeader = 0
 Do not track: privacy.donottrackheader.enabled = true
 Tracking protection: privacy.trackingprotection.enabled = true

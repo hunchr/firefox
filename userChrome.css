@@ -1,35 +1,129 @@
-:root {
-    --tab-block-margin: 0px !important;
-    --urlbar-height: 36px;
-    --urlbar-toolbar-height: 36px;
+:root,
+element {
+    --hunchr-fg: #e1e0e6;
+    --hunchr-bg: #000;
+    --hunchr-hover: #1a1a1c;
+    --hunchr-gray: #949597;
+    --hunchr-blue: #6060ff;
+    --hunchr-blue-hover: #7274fb;
+    --hunchr-red: #ed0000;
+
+    --toolbar-start-end-padding: 0 !important;
+    --toolbarbutton-outer-padding: 0 !important;
+    --tab-min-height: 32px !important;
+    --tab-block-margin: 0 !important;
+    --urlbar-container-height: 32px !important;
+    --urlbar-toolbar-height: 32px !important;
+
+    --panel-disabled-color: var(--hunchr-fg) !important;
+    --panel-description-color: var(--hunchr-fg) !important;
+    --arrowpanel-color: var(--hunchr-fg) !important;
+    --toolbar-field-color: var(--hunchr-fg) !important;
+    --toolbar-color: var(--hunchr-fg) !important;
+    --toolbarbutton-icon-fill: var(--hunchr-fg) !important;
+    --toolbar-field-focus-color: var(--hunchr-fg) !important;
+    --toolbar-non-lwt-textcolor: var(--hunchr-fg) !important;
+    --lwt-toolbarbutton-icon-fill-attention: var(--hunchr-fg) !important;
+    --lwt-text-color: var(--hunchr-fg) !important;
+    --lwt-tab-text: var(--hunchr-fg) !important;
+    --lwt-sidebar-text-color: var(--hunchr-fg) !important;
+    --autocomplete-popup-highlight-color: var(--hunchr-fg) !important;
+    --button-primary-color: var(--hunchr-fg) !important;
+    --button-color: var(--hunchr-fg) !important;
+    --input-color: var(--hunchr-fg) !important;
+    --checkbox-checked-color: var(--hunchr-fg) !important;
+    
+    --arrowpanel-background: var(--hunchr-bg) !important;
+    --toolbar-field-border-color: var(--hunchr-bg) !important;
+    --toolbar-bgcolor: var(--hunchr-bg) !important;
+    --toolbar-non-lwt-bgcolor: var(--hunchr-bg) !important;
+    --tabpanel-background-color: var(--hunchr-bg) !important;
+    --lwt-accent-color: var(--hunchr-bg) !important;
+    --lwt-accent-color-inactive: var(--hunchr-bg) !important;
+    --lwt-background-tab-separator-color: var(--hunchr-bg) !important;
+    --lwt-sidebar-background-color: var(--hunchr-bg) !important;
+    --chrome-content-separator-color: var(--hunchr-bg) !important;
+    --input-bgcolor: var(--hunchr-bg) !important;
+    
+    --arrowpanel-border-color: var(--hunchr-hover) !important;
+    --toolbar-field-background-color: var(--hunchr-hover) !important;
+    --toolbar-field-focus-background-color: var(--hunchr-hover) !important;
+    --toolbar-field-focus-border-color: var(--hunchr-hover) !important;
+    --toolbarbutton-hover-background: var(--hunchr-hover) !important;
+    --toolbarbutton-active-background: var(--hunchr-hover) !important;
+    --tab-selected-bgcolor: var(--hunchr-hover) !important;
+    --lwt-selected-tab-background-color: var(--hunchr-hover) !important;
+    --autocomplete-popup-separator-color: var(--hunchr-hover) !important;
+    --checkbox-border-color: var(--hunchr-hover) !important;
+    --checkbox-unchecked-bgcolor: var(--hunchr-hover) !important;
+    
+    --panel-shortcut-color: var(--hunchr-gray) !important;
+    --toolbarseparator-color: var(--hunchr-gray) !important;
+    --tab-icon-overlay-stroke: var(--hunchr-gray) !important;
+    --tab-icon-overlay-fill: var(--hunchr-gray) !important;
+    --urlbar-popup-action-color: var(--hunchr-gray) !important;
+    --checkbox-unchecked-hover-bgcolor: var(--hunchr-gray) !important;
+    
+    --toolbarbutton-icon-fill-attention: var(--hunchr-blue) !important;
+    --urlbar-popup-url-color: var(--hunchr-blue) !important;
+    --lwt-toolbar-field-highlight: var(--hunchr-blue) !important;
+    --focus-outline-color: var(--hunchr-blue) !important;
+    --autocomplete-popup-highlight-background: var(--hunchr-blue) !important;
+    --checkbox-unchecked-active-bgcolor: var(--hunchr-blue) !important;
+    --checkbox-checked-bgcolor: var(--hunchr-blue) !important;
+    --button-primary-bgcolor: var(--hunchr-blue) !important;
+    --button-bgcolor: var(--hunchr-blue) !important;
+    
+    --button-primary-hover-bgcolor: var(--hunchr-blue-hover) !important;
+    --button-primary-active-bgcolor: var(--hunchr-blue-hover) !important;
+    --button-hover-bgcolor: var(--hunchr-blue-hover) !important;
+    --button-active-bgcolor: var(--hunchr-blue-hover) !important;
+    --checkbox-checked-hover-bgcolor: var(--hunchr-blue-hover) !important;
+    --checkbox-checked-active-bgcolor: var(--hunchr-blue-hover) !important;
+
+    --error-text-color: var(--hunchr-red) !important;
+
+    --lwt-toolbar-field-highlight-text: #fff !important;
+
+    --input-border-color: transparent !important;
+    --checkbox-checked-border-color: transparent !important;
+
+    --urlbar-icon-fill-opacity: .75 !important;
 }
 
-#nav-bar {
-    height: 36px;
+#alltabs-button,
+.titlebar-spacer,
+#firefox-view-button {
+    display: none !important;
 }
 
-#titlebar {
-    height: 39px;
-}
-
-.titlebar-spacer {
-    width: 0 !important;
-}
-
-.tabbrowser-tab {
-    padding: 0 1px !important;
-}
-
-.tab-background[selected]:not([multiselected="true"]):-moz-lwtheme {
+.tab-background[selected] {
     outline: none !important;
 }
 
-#nav-bar toolbarbutton {
-    margin-bottom: 3px !important;
+#tabbrowser-tabs {
+    border-width: 0 !important;
+}
+
+.tabbrowser-tab {
+    padding: 0 !important;
+}
+
+.titlebar-button {
+    border-radius: 4px !important;
+    padding: 8px 10px !important;
+}
+
+.titlebar-button:not(.titlebar-close):hover {
+    background-color: var(--hunchr-hover) !important;
+}
+
+.titlebar-close:hover {
+    background-color: var(--hunchr-red) !important;
 }
 
 .urlbar-input-box {
-    overflow: clip;
+    overflow: clip !important;
 }
 
 #urlbar-input {
