@@ -103,10 +103,14 @@ element {
 
 #tabbrowser-tabs {
     border-width: 0 !important;
+    padding: 0 !important;
 }
 
-.tabbrowser-tab {
+.tabbrowser-tab,
+#tabbrowser-arrowscrollbox-periphery {
+    position: relative !important;
     padding: 0 !important;
+    z-index: 2 !important;
 }
 
 .titlebar-button {
@@ -120,6 +124,10 @@ element {
 
 .titlebar-close:hover {
     background-color: var(--hunchr-red) !important;
+}
+
+#nav-bar {
+    margin: -4px 0 !important;
 }
 
 .urlbar-input-box {
